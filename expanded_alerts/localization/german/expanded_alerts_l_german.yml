@@ -5,3 +5,8 @@ l_german:
  action_empty_physician_position_label:0 "Du solltest einen [court_physician|E] finden"
  action_empty_physician_position_desc:0 "Du hast keinen [court_physician|E]\n\n#help Du hast zur Zeit keinen Hofarzt und im Falle einer [illness|E] oder Krankheit, gefährdest du damit dich und deine Höflinge.#!"
  action_empty_physician_position_click:0 "#I klicke um einen Hofsarzt zu finden#!"
+ 
+ action_truce_expiring:0 "[truce|E] ending soon"
+ action_truce_expiring_label:0 "[truce|E] ending soon"
+ action_truce_expiring_desc:0 "Your [truce|E] with [recipient.GetUIName] ends soon\n\n#help Your [truce|E] with [recipient.GetShortUINameNoTooltip] expires in less than three months, allowing you to declare [war|E] on [recipient.GetHerHim] without penalty.#!"
+ action_truce_expiring_click:0 "#I Click to open [recipient.HerHis] Character View#!"
