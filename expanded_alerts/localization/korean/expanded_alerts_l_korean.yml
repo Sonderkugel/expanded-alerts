@@ -1,0 +1,12 @@
+﻿# Localization by PENGUINMAN
+
+l_korean:
+ action_empty_physician_position:0 "[court_physician|E]가 없음"
+ action_empty_physician_position_label:0 "[court_physician|E]를 찾을 필요가 있습니다"
+ action_empty_physician_position_desc:0 "당신에게 [court_physician|E]가 없습니다\n\n#help 현재 궁정 의사가 없어, 당신과 당신의 가신들이 [illness|E] 및 부상으로 고통받을 수 있습니다.#!"
+ action_empty_physician_position_click:0 "#I 클릭하여 궁정 의사를 찾기#!"
+ 
+ action_truce_expiring:0 "[truce|E]이 곧 만료됨"
+ action_truce_expiring_label:0 "[truce|E]이 곧 만료됨"
+ action_truce_expiring_desc:0 "[recipient.GetUIName]와의 [truce|E]이 곧 만료됩니다\n\n#help 당신의 [recipient.GetUIName]와의 [truce|E]이 3개월 안에 만료되어, 페널티 없이 [recipient.GetHerHim]에게 [war|E]을 선포할 수 있습니다.#!"
+ action_truce_expiring_click:0 "#I [recipient.HerHis]클릭하여 표시하기#!"

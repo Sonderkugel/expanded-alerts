@@ -1,0 +1,10 @@
+﻿l_english:
+ action_empty_physician_position:0 "No [court_physician|E]"
+ action_empty_physician_position_label:0 "You should find a [court_physician|E]"
+ action_empty_physician_position_desc:0 "You have no [court_physician|E]\n\n#help You currently lack a Court Physician, putting you and your courtiers at risk in the event of [illness|E] or injury.#!"
+ action_empty_physician_position_click:0 "#I Click to find a Court Physician#!"
+ 
+ action_truce_expiring:0 "[truce|E] ending soon"
+ action_truce_expiring_label:0 "[truce|E] ending soon"
+ action_truce_expiring_desc:0 "Your [truce|E] with [recipient.GetUIName] ends soon\n\n#help Your [truce|E] with [recipient.GetShortUINameNoTooltip] expires in less than three months, allowing you to declare [war|E] on [recipient.GetHerHim] without penalty.#!"
+ action_truce_expiring_click:0 "#I Click to open [recipient.HerHis] Character View#!"
