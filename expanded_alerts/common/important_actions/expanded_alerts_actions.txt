@@ -1,0 +1,172 @@
+action_can_assign_guardian = {
+    type = alert
+
+	check_create_action = {
+		every_child = {
+			limit = {
+				is_adult = no
+				num_of_relation_guardian = 0
+				age >= childhood_education_start_age
+				exists = liege
+				liege = root
+				root = {
+					is_character_interaction_valid = {
+						recipient = prev
+						interaction = educate_child_interaction
+					}
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_can_assign_guardian
+				actor = root
+				recipient = this
+				secondary_recipient = this
+			}
+		}
+		
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = educate_child_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+			secondary_recipient = scope:secondary_recipient
+		}
+	}
+}
+
+action_can_lawfully_imprison = {
+    type = alert
+
+	check_create_action = {
+
+		every_vassal_or_below = {
+			try_create_lawfully_imprison = yes
+			every_courtier = {
+				try_create_lawfully_imprison = yes
+			}
+		}		
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = imprison_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_can_call_ally = {
+    type = alert
+
+	check_create_action = {
+		every_ally = {
+			save_temporary_scope_as = ally
+			if = {
+				limit = {
+					prev = {
+						is_character_interaction_valid = {
+							recipient = scope:ally
+							interaction = call_ally_interaction
+						}
+					}
+				}
+				try_create_important_action = {
+					important_action_type = action_can_call_ally
+					actor = root
+					recipient = scope:ally
+				}
+			}
+		}
+	}
+	
+	effect = {
+		open_interaction_window = {
+			interaction = call_ally_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_can_call_house_member = {
+    type = alert
+
+	check_create_action = {
+		if = {
+			limit = {
+				is_house_head = yes
+			}
+			house = {
+				every_house_member = {
+					save_temporary_scope_as = member
+					if = {
+						limit = {
+							root = {
+								is_character_interaction_valid = {
+									recipient = scope:member
+									interaction = call_house_member_to_war_interaction
+								}
+							}
+						}
+						try_create_important_action = {
+							important_action_type = action_can_call_house_member
+							actor = root
+							recipient = scope:member
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	effect = {
+		open_interaction_window = {
+			interaction = call_house_member_to_war_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_can_call_dynasty_member = {
+    type = alert
+
+	check_create_action = {
+		if = {
+			limit = {
+				is_dynast = yes
+			}
+			dynasty = {
+				every_dynasty_member = {
+					save_temporary_scope_as = member
+					if = {
+						limit = {
+							root = {
+								is_character_interaction_valid = {
+									recipient = scope:member
+									interaction = call_dynasty_member_to_war_interaction
+								}
+							}
+						}
+						try_create_important_action = {
+							important_action_type = action_can_call_dynasty_member
+							actor = root
+							recipient = scope:member
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	effect = {
+		open_interaction_window = {
+			interaction = call_dynasty_member_to_war_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
