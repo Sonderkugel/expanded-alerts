@@ -1,0 +1,3 @@
+﻿# Duration until alert for truce expiration
+standard_truce_alert_days = 1735
+flexible_truces_perk_truce_alert_days = 1285
