@@ -13,8 +13,7 @@
 				flag = flag_no_physician
 			}
 		}
-		
-		if = {
+		else_if = {
 			limit = {
 				any_relation = {
 					type = court_physician
