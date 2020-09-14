@@ -243,6 +243,7 @@ action_truce_expiring = {
 				limit = {
 					scope:truce_target = {
 						NOT = { has_character_flag = has_truce_flag }
+						is_landed = yes
 					}
 				}
 				try_create_important_action = {
