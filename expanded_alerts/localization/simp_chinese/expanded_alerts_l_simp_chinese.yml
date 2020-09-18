@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  action_empty_physician_position:0 "No [court_physician|E]"
  action_empty_physician_position_label:0 "You should find a [court_physician|E]"
  action_empty_physician_position_desc:0 "You have no [court_physician|E]\n\n#help You currently lack a Court Physician, putting you and your courtiers at risk in the event of [illness|E] or injury.#!"
