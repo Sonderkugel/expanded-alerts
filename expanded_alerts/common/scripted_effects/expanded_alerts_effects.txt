@@ -162,51 +162,6 @@ add_truce_GHW_attacker_victory_effect = {
 	}
 }
 
-# Force a white peace on any forced.
-force_truce_GHW_defenders_effect = {
-	hidden_effect = {
-		#if any defender
-			#owns lands in target kingdom
-			#is primary in war with another defender who
-				#owns land in target kingdom
-				#is also a primary
-			#then end that war with a white peace
-		scope:the_ghw = {
-			every_pledged_defender = {
-				save_temporary_scope_as = white_peace_attacker
-				every_character_war = {
-					if = {
-						limit = {
-							primary_attacker = scope:white_peace_attacker
-							primary_defender = {
-								save_temporary_scope_as = white_peace_defender
-								OR = {
-									scope:the_ghw = { has_forced_defender = scope:white_peace_defender }
-									AND = {
-										scope:target_kingdom = {
-											any_de_jure_county_holder = {
-												OR = {
-													this = scope:white_peace_defender
-													any_liege_or_above = { this = scope:white_peace_defender }
-												}
-											}
-										}
-										top_liege = {
-											save_temporary_scope_as = white_peace_liege
-											scope:the_ghw = { has_forced_defender = scope:white_peace_liege }
-										}
-									}
-								}
-							}
-						}
-						end_war = white_peace
-					}
-				}
-			}
-		}
-	}
-}
-
 # Major decisions which add truces
 
 unite_burgundies_scripted_effect = {
