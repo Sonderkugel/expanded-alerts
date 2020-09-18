@@ -246,7 +246,7 @@ action_truce_expiring = {
 							NOT = { has_character_flag = has_truce_flag }
 							is_landed = yes
 						}
-						every_truce_target = {
+						any_truce_target = {
 							has_character_flag = has_truce_flag
 							count < 5
 						}
@@ -283,7 +283,7 @@ action_truce_expiring_grouped = {
 							NOT = { has_character_flag = has_truce_flag }
 							is_landed = yes
 						}
-						every_truce_target = {
+						any_truce_target = {
 							has_character_flag = has_truce_flag
 							count >= 5
 						}
