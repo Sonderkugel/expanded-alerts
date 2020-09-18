@@ -241,17 +241,9 @@ action_truce_expiring = {
 			save_temporary_scope_as = truce_target
 			if = {
 				limit = {
-					AND = {
-						scope:truce_target = {
-							NOT = { has_character_flag = has_truce_flag }
-							is_landed = yes
-						}
-						root = {
-							any_truce_target = {
-								has_character_flag = has_truce_flag
-								count < 5
-							}
-						}
+					scope:truce_target = {
+						NOT = { has_character_flag = has_truce_flag }
+						is_landed = yes
 					}
 				}
 				try_create_important_action = {
@@ -272,40 +264,40 @@ action_truce_expiring = {
 	}
 }
 
-action_truce_expiring_grouped = {
-	type = alert
-	
-	check_create_action = {
-		every_truce_target = {
-			save_temporary_scope_as = truce_target
-			if = {
-				limit = {
-					AND = {
-						scope:truce_target = {
-							NOT = { has_character_flag = has_truce_flag }
-							is_landed = yes
-						}
-						root = {
-							any_truce_target = {
-								has_character_flag = has_truce_flag
-								count >= 5
-							}
-						}
-					}
-				}
-				try_create_important_action = {
-					important_action_type = action_truce_expiring_grouped
-					actor = root
-				}
-			}
-		}
-	}
-	
-	effect = {
-		scope:actor = {
-			open_view_data = {
-				view = diplomacy
-			}
-		}
-	}
-}
+#action_truce_expiring_grouped = {
+#	type = alert
+#	
+#	check_create_action = {
+#		every_truce_target = {
+#			save_temporary_scope_as = truce_target
+#			if = {
+#				limit = {
+#					AND = {
+#						scope:truce_target = {
+#							NOT = { has_character_flag = has_truce_flag }
+#							is_landed = yes
+#						}
+#						root = {
+#							any_truce_target = {
+#								has_character_flag = has_truce_flag
+#								count >= 5
+#							}
+#						}
+#					}
+#				}
+#				try_create_important_action = {
+#					important_action_type = action_truce_expiring_grouped
+#					actor = root
+#				}
+#			}
+#		}
+#	}
+#	
+#	effect = {
+#		scope:actor = {
+#			open_view_data = {
+#				view = diplomacy
+#			}
+#		}
+#	}
+#}
