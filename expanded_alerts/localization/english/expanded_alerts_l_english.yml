@@ -8,3 +8,7 @@
  action_truce_expiring_label:0 "[truce|E] ending soon"
  action_truce_expiring_desc:0 "Your [truce|E] with [recipient.GetUIName] ends soon\n\n#help Your [truce|E] with [recipient.GetShortUINameNoTooltip] expires in less than three months, allowing you to declare [war|E] on [recipient.GetHerHim] without penalty.#!"
  action_truce_expiring_click:0 "#I Click to open [recipient.HerHis] Character View#!"
+ action_truce_expiring_grouped:0 "[truce|E]s ending soon"
+ action_truce_expiring_label_grouped:0 "[truce|E]s ending soon"
+ action_truce_expiring_desc_grouped:0 "You have 5 or more [truce|E]s ending soon\n\n#help You have 5 or more [truce|E]s expiring in less than three months, allowing you to declare [war|E] on several characters without penalty.#!"
+ action_truce_expiring_click_grouped:0 "#I Click to open your diplomacy window#!"
