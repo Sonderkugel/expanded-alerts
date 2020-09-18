@@ -296,7 +296,7 @@ action_truce_expiring_grouped = {
 	effect = {
 		scope:actor = {
 			open_view_data = {
-				view = diplomacy_window
+				view = diplomacy
 			}
 		}
 	}
