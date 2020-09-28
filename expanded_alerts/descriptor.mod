@@ -1,8 +1,8 @@
-version="1.3.4"
+version="1.3.5"
 tags={
 	"Utilities"
 	"Fixes"
 	"Gameplay"
 }
 name="Expanded Alerts"
-supported_version="1.0.*"
+supported_version="1.1.*"
