@@ -110,10 +110,14 @@
                         limit = {
                             scope:defender = { is_ai = no}
                         }
-                        add_character_flag = {
-                            flag = has_truce_flag
-                            days = standard_truce_alert_days
-                        }
+						scope:attacker.joined_faction = {
+							every_faction_member = {
+								add_character_flag = {
+									flag = has_truce_flag
+									days = standard_truce_alert_days
+								}
+							}
+						}
                     }
 				}
 			}

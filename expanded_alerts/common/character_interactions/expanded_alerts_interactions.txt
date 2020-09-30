@@ -122,6 +122,17 @@ grant_independence_interaction = {
 
 					custom_tooltip = grant_vassal_independence_interaction_toast_desc
 				}
+				if = {
+					limit = {
+						scope:actor = { is_ai = no }
+					}
+					scope:recipient = {
+						add_character_flag = {
+							flag = has_truce_flag
+							days = 3560
+						}
+					}
+				}
 			}
 		}
 
@@ -186,11 +197,6 @@ grant_independence_interaction = {
 				character = scope:actor
 				days = 3650
 				name = TRUCE_GRANT_INDEPENDENCE
-			}
-			
-			add_character_flag = {
-				flag = has_truce_flag
-				days = 3560
 			}
 
 			create_title_and_vassal_change = change
