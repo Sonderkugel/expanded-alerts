@@ -1,6 +1,7 @@
 ﻿independence_faction_war = {
 	group = civil_war
 	ai_only_against_liege = yes
+	target_titles = independence_domain
 	allowed_for_character = {
 		scope:attacker = {
 			is_leading_faction_type = independence_faction
@@ -70,9 +71,9 @@
 	}
 
 	on_victory = {
-		create_title_and_vassal_change = change
-		scope:change = {
-			set_title_and_vassal_change_type = independency
+		create_title_and_vassal_change = {
+			type = independency
+			save_scope_as = change
 		}
 
 		scope:attacker.joined_faction = {
@@ -213,7 +214,7 @@
 		scope:defender = {
 			add_character_flag = {
 				flag = recent_independence_faction_war
-				years = independence_war_white_peace_cooldown
+				years = faction_war_white_peace_cooldown
 			}
 			add_prestige = minor_prestige_value
 		}
@@ -235,7 +236,7 @@
 				}
 				desc = independence_defeat_attacker_desc
 			}
-			desc = independence_war_defeat_desc
+			desc = player_independence_war_defeat_desc #same loc as player
 		}
 		desc = independence_defeat_end_desc
 	}
@@ -244,7 +245,7 @@
 		scope:defender = {
 			add_character_flag = {
 				flag = recent_independence_faction_war
-				years = independence_war_defeat_cooldown
+				years = faction_war_defeat_cooldown
 			}
 			add_dread = medium_dread_gain
 			# Prestige for Defender
