@@ -15,5 +15,5 @@
 
 action_being_sieged:0 "Under [siege|E]"
 action_being_sieged_label:0 "Under [siege|E]"
-action_being_sieged_desc:0 "[armies|E] from [recipient.GetShortUIName] are in your territory.\n\n#help Defeat them in [battle|E] to interrupt the siege and prevent loss of [county_control|E] in your [realm|E]#!"
+action_being_sieged_desc:0 "Hostile [armies|E] are sieging your [holdings|E]\n\n#help Defeat the besieging army in [battle|E] to prevent [occupation|E] and loss of [county_control|E].#!"
 action_being_sieged_click:0 "#I Click to go to Besieging Army#!"
