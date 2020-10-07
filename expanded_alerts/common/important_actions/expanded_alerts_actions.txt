@@ -91,85 +91,85 @@ action_can_call_ally = {
 	}
 }
 
-action_can_call_house_member = {
-    type = alert
+#action_can_call_house_member = {
+#    type = alert
+#
+#	check_create_action = {
+#		if = {
+#			limit = {
+#				is_house_head = yes
+#			}
+#			house = {
+#				every_house_member = {
+#					save_temporary_scope_as = member
+#					if = {
+#						limit = {
+#							root = {
+#								is_character_interaction_valid = {
+#									recipient = scope:member
+#									interaction = call_house_member_to_war_interaction
+#								}
+#							}
+#						}
+#						try_create_important_action = {
+#							important_action_type = action_can_call_house_member
+#							actor = root
+#							recipient = scope:member
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#	
+#	effect = {
+#		open_interaction_window = {
+#			interaction = call_house_member_to_war_interaction
+#			actor = scope:actor
+#			recipient = scope:recipient
+#		}
+#	}
+#}
 
-	check_create_action = {
-		if = {
-			limit = {
-				is_house_head = yes
-			}
-			house = {
-				every_house_member = {
-					save_temporary_scope_as = member
-					if = {
-						limit = {
-							root = {
-								is_character_interaction_valid = {
-									recipient = scope:member
-									interaction = call_house_member_to_war_interaction
-								}
-							}
-						}
-						try_create_important_action = {
-							important_action_type = action_can_call_house_member
-							actor = root
-							recipient = scope:member
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	effect = {
-		open_interaction_window = {
-			interaction = call_house_member_to_war_interaction
-			actor = scope:actor
-			recipient = scope:recipient
-		}
-	}
-}
-
-action_can_call_dynasty_member = {
-    type = alert
-
-	check_create_action = {
-		if = {
-			limit = {
-				is_dynast = yes
-			}
-			dynasty = {
-				every_dynasty_member = {
-					save_temporary_scope_as = member
-					if = {
-						limit = {
-							root = {
-								is_character_interaction_valid = {
-									recipient = scope:member
-									interaction = call_dynasty_member_to_war_interaction
-								}
-							}
-						}
-						try_create_important_action = {
-							important_action_type = action_can_call_dynasty_member
-							actor = root
-							recipient = scope:member
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	effect = {
-		open_interaction_window = {
-			interaction = call_dynasty_member_to_war_interaction
-			actor = scope:actor
-			recipient = scope:recipient
-		}
-	}
-}
+#action_can_call_dynasty_member = {
+#    type = alert
+#
+#	check_create_action = {
+#		if = {
+#			limit = {
+#				is_dynast = yes
+#			}
+#			dynasty = {
+#				every_dynasty_member = {
+#					save_temporary_scope_as = member
+#					if = {
+#						limit = {
+#							root = {
+#								is_character_interaction_valid = {
+#									recipient = scope:member
+#									interaction = call_dynasty_member_to_war_interaction
+#								}
+#							}
+#						}
+#						try_create_important_action = {
+#							important_action_type = action_can_call_dynasty_member
+#							actor = root
+#							recipient = scope:member
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#	
+#	effect = {
+#		open_interaction_window = {
+#			interaction = call_dynasty_member_to_war_interaction
+#			actor = scope:actor
+#			recipient = scope:recipient
+#		}
+#	}
+#}
 
 action_not_enough_knights = {
 	type = alert
