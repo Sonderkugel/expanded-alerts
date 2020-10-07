@@ -1,10 +1,17 @@
-﻿l_simp_chinese:
- action_empty_physician_position:0 "No [court_physician|E]"
- action_empty_physician_position_label:0 "You should find a [court_physician|E]"
- action_empty_physician_position_desc:0 "You have no [court_physician|E]\n\n#help You currently lack a Court Physician, putting you and your courtiers at risk in the event of [illness|E] or injury.#!"
- action_empty_physician_position_click:0 "#I Click to find a Court Physician#!"
+﻿# Localization by mtmzorro
+
+l_simp_chinese:
+ action_empty_physician_position:0 "缺少[court_physician|E]"
+ action_empty_physician_position_label:0 "你需要寻找一名[court_physician|E]"
+ action_empty_physician_position_desc:0 "你没有[court_physician|E]\n\n#help 你现在缺少一名宫廷医师，如果此时你[illness|E]或者受伤将置你和你的国家于风险之中。#!"
+ action_empty_physician_position_click:0 "#I 点击寻找宫廷医师#!"
  
- action_truce_expiring:0 "[truce|E] ending soon"
- action_truce_expiring_label:0 "[truce|E] ending soon"
- action_truce_expiring_desc:0 "Your [truce|E] with [recipient.GetUIName] ends soon\n\n#help Your [truce|E] with [recipient.GetShortUINameNoTooltip] expires in less than three months, allowing you to declare [war|E] on [recipient.GetHerHim] without penalty.#!"
- action_truce_expiring_click:0 "#I Click to open [recipient.HerHis] Character View#!"
+ action_truce_expiring:0 "[truce|E]即将到期"
+ action_truce_expiring_label:0 "[truce|E]即将到期"
+ action_truce_expiring_desc:0 "你和[recipient.GetUIName]的[truce|E]即将到期\n\n#help 你和[recipient.GetShortUINameNoTooltip]的[truce|E]即将于3个月内到期，之后你再向[recipient.GetHerHim]发起[war|E]将没有撕毁停战协议惩罚。#!"
+ action_truce_expiring_click:0 "#I 点击查看[recipient.HerHis]角色#!"
+ action_truce_expiring_grouped:0 "多个[truce|E]即将到期"
+ action_truce_expiring_grouped_label:0 "多个[truce|E]即将到期"
+ action_truce_expiring_grouped_desc:0 "你有5个或者更多[truce|E]即将到期\n\n#help 你有5个或者更多[truce|E]即将于3个月内到期，之后你再向他们发起[war|E]将没有撕毁停战协议惩罚。#!"
+ action_truce_expiring_grouped_click:0 "#I 点击打开外交界面#!"
+ 
