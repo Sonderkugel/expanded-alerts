@@ -264,6 +264,44 @@ action_truce_expiring = {
 	}
 }
 
+action_being_sieged = {
+	type = alert
+	check_create_action = {
+		every_war_enemy = {
+			save_temporary_scope_as = war_enemy
+			limit = {
+				scope:war_enemy = {
+					any_army = {
+						is_army_in_siege_relevant_for = root
+					}
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_being_sieged
+				actor = root
+				recipient = scope:war_enemy
+			}
+		}
+	}
+
+	effect = {
+		scope:recipient = {
+			random_army = {
+				limit = {
+					is_army_in_siege_relevant_for = root
+				}
+				if = {
+					limit = { is_army_in_siege_relevant_for = root }
+					open_view_data = {
+						view = siege
+					}
+				}
+				pan_camera_to_province = location
+			}
+		}
+	}
+}
+
 #action_truce_expiring_grouped = {
 #	type = alert
 #	
