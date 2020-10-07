@@ -12,3 +12,8 @@
  action_truce_expiring_grouped_label:0 "[truce|E]s ending soon"
  action_truce_expiring_grouped_desc:0 "You have 5 or more [truce|E]s ending soon\n\n#help You have 5 or more [truce|E]s expiring in less than three months, allowing you to declare [war|E] on several characters without penalty.#!"
  action_truce_expiring_grouped_click:0 "#I Click to open your diplomacy window#!"
+
+action_being_sieged:0 "Under [siege|E]"
+action_being_sieged_label:0 "Under [siege|E]"
+action_being_sieged_desc:0 "[armies|E] from [recipient.GetShortUIName] are in your territory.\n\n#help Defeat them in [battle|E] to interrupt the siege and prevent loss of [county_control|E] in your [realm|E]#!"
+action_being_sieged_click:0 "#I Click to go to Besieging Army#!"

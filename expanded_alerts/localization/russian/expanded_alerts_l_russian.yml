@@ -8,3 +8,8 @@
  action_truce_expiring_label:0 "[truce|E] ending soon"
  action_truce_expiring_desc:0 "Your [truce|E] with [recipient.GetUIName] ends soon\n\n#help Your [truce|E] with [recipient.GetShortUINameNoTooltip] expires in less than three months, allowing you to declare [war|E] on [recipient.GetHerHim] without penalty.#!"
  action_truce_expiring_click:0 "#I Click to open [recipient.HerHis] Character View#!"
+
+action_being_sieged:0 "Under [siege|E]"
+action_being_sieged_label:0 "Under [siege|E]"
+action_being_sieged_desc:0 "[armies|E] from [recipient.GetShortUIName] are in your territory.\n\n#help Defeat them in [battle|E] to interrupt the siege and prevent loss of [county_control|E] in your [realm|E]#!"
+action_being_sieged_click:0 "#I Click to go to Besieging Army#!"

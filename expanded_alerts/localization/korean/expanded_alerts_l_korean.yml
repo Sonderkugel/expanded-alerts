@@ -10,3 +10,8 @@ l_korean:
  action_truce_expiring_label:0 "[truce|E]이 곧 만료됨"
  action_truce_expiring_desc:0 "[recipient.GetUIName]와의 [truce|E]이 곧 만료됩니다\n\n#help 당신의 [recipient.GetUIName]와의 [truce|E]이 3개월 안에 만료되어, 페널티 없이 [recipient.GetHerHim]에게 [war|E]을 선포할 수 있습니다.#!"
  action_truce_expiring_click:0 "#I [recipient.HerHis]클릭하여 표시하기#!"
+
+action_being_sieged:0 "Under [siege|E]"
+action_being_sieged_label:0 "Under [siege|E]"
+action_being_sieged_desc:0 "[armies|E] from [recipient.GetShortUIName] are in your territory.\n\n#help Defeat them in [battle|E] to interrupt the siege and prevent loss of [county_control|E] in your [realm|E]#!"
+action_being_sieged_click:0 "#I Click to go to Besieging Army#!"

@@ -15,3 +15,7 @@ l_simp_chinese:
  action_truce_expiring_grouped_desc:0 "你有5个或者更多[truce|E]即将到期\n\n#help 你有5个或者更多[truce|E]即将于3个月内到期，之后你再向他们发起[war|E]将没有撕毁停战协议惩罚。#!"
  action_truce_expiring_grouped_click:0 "#I 点击打开外交界面#!"
  
+action_being_sieged:0 "Under [siege|E]"
+action_being_sieged_label:0 "Under [siege|E]"
+action_being_sieged_desc:0 "[armies|E] from [recipient.GetShortUIName] are in your territory.\n\n#help Defeat them in [battle|E] to interrupt the siege and prevent loss of [county_control|E] in your [realm|E]#!"
+action_being_sieged_click:0 "#I Click to go to Besieging Army#!"
