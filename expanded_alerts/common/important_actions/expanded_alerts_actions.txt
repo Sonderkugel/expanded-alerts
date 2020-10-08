@@ -274,6 +274,7 @@ action_being_sieged = {
 					scope:war_enemy = {
 						any_army = {
 							is_army_in_siege_relevant_for = root
+							is_army_in_combat = no
 						}
 					}
 				}
