@@ -43,13 +43,12 @@
 			remove_character_flag = flag_no_physician
 		}
 		scope:recipient = {
-			if = {
-				add_opinion = {
-					target = scope:actor
-					modifier = grateful_opinion
-					opinion = 15 #Should match the amount lost when fired so it's not a way to farm opinion
-				}
+			add_opinion = {
+				target = scope:actor
+				modifier = grateful_opinion
+				opinion = 15 #Should match the amount lost when fired so it's not a way to farm opinion
 			}
+			add_gold = 10
 		}
 	}
 	
@@ -94,11 +93,9 @@ grant_independence_interaction = {
 			text = is_de_jure_vassal_check
 			object = scope:recipient
 			NOT = { #Can not be used against de jure vassals
-				scope:actor = {
-					any_held_title = {
-						any_in_de_jure_hierarchy = {
-							this.holder = scope:recipient
-						}
+				scope:recipient.primary_title = {
+					any_this_title_or_de_jure_above = {
+						holder = scope:actor
 					}
 				}
 			}

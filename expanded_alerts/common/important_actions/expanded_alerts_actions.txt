@@ -26,6 +26,16 @@
 		
 	}
 
+	unimportant = {
+		scope:recipient = {
+			any_sibling = { #Not one of your three first kids
+				is_child_of = root
+				age > scope:recipient.age
+				count >= 3
+			}
+		}
+	}
+
 	effect = {
 		open_interaction_window = {
 			interaction = educate_child_interaction
