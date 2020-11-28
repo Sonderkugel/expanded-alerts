@@ -1,5 +1,5 @@
 ﻿being_sieged_alert = {
-    default = on_being_sieged_alerts
+    default = on_being_sieged_alert
 
     on_being_sieged_alert = {
 
