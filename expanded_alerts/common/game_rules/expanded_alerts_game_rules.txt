@@ -1,0 +1,11 @@
+﻿being_sieged_alert = {
+    default = on_being_sieged_alerts
+
+    on_being_sieged_alert = {
+
+    }
+
+    off_being_sieged_alert = {
+
+    }
+}
