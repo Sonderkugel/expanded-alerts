@@ -1,7 +1,7 @@
 ﻿l_english:
  rule_being_sieged_alert:0 "#B Expanded Alerts: #! Being Sieged"
- setting_on_being_sieged_alert:0 = "On"
- setting_on_being_sieged_alert_desc:0 = "Alerts will appear when hostile sieges occur."
- setting_off_being_sieged_alert:0 = "#high Off#!"
+ setting_on_being_sieged_alert:0 "On"
+ setting_on_being_sieged_alert_desc:0 "Alerts will appear when hostile sieges occur."
+ setting_off_being_sieged_alert:0 "#high Off#!"
  setting_off_being_sieged_alert_desc:0 "Alerts will NOT appear when hostile sieges occur."
  
