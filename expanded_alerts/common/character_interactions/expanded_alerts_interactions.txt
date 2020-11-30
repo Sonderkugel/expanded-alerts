@@ -130,6 +130,17 @@ grant_independence_interaction = {
 						}
 					}
 				}
+				else_if = {
+					limit = {
+						scope:recipient = { is_ai = no}
+					}
+					scope:actor = {
+						add_character_flag = {
+							flag = has_truce_flag
+							days = 3560
+						}
+					}
+				}
 			}
 		}
 
