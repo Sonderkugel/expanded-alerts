@@ -187,7 +187,7 @@ action_not_enough_knights = {
 	check_create_action = {
 		if = {
 			limit = {
-				max_number_of_knights != root.number_of_knights
+				max_number_of_knights > root.number_of_knights
 			}
 			try_create_important_action = {
 				important_action_type = action_not_enough_knights
