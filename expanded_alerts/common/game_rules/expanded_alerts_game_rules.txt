@@ -9,3 +9,27 @@
 
     }
 }
+
+hook_expiring_alert = {
+    default = on_hook_expiring_alert
+
+    on_hook_expiring_alert = {
+
+    }
+
+    off_hook_expiring_alert = {
+
+    }
+}
+
+can_vassalize_alert = {
+    default = on_can_vassalize_alert
+
+    on_can_vassalize_alert = {
+
+    }
+
+    off_can_vassalize_alert = {
+
+    }
+}
