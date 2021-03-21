@@ -18,3 +18,14 @@
  action_being_sieged_label:0 "[siege|E] 당하는 중"
  action_being_sieged_desc:0 " [recipient.GetShortUIName] 의 [armies|E] 가 [holdings|E] (을)를 공성 중입니다.\n\n#[battle|E] 에서 공성 중인 부대를 격퇴하여 [occupation|E] 을 막고 [county_control|E] 을 지킬 수 있습니다.#!"
  action_being_sieged_click:0 "#I 클릭하여 공성 중인 부대 보기#!"
+ 
+ action_hook_expiring_alert:0 "Hook expiring soon"
+ action_hook_expiring_alert_desc:0 "You should spend the [hook|E] you have on [recipient.GetUIName] soon, or it will expire on [actor.GetHookOn( recipient.Self ).GetExpirationDate.GetString]."
+ action_hook_expiring_alert_label:0 "Your [hook|E] on [recipient.GetShortUINameNoTooltip] will soon expire"
+ action_hook_expiring_alert_click:0 "#I Click to open Character View#!"
+
+ action_can_vassalize_alert:0 "Neighbor can be Vassalized"
+ action_can_vassalize_alert_desc:1 "A neighboring [ruler|E], [recipient.GetUIName], wishes for your protection and would accept [vassalization|E].$action_can_vassalize_HELP$"
+ action_can_vassalize_alert_label:0 "You can Vassalize [recipient.GetShortUINameNoTooltip]"
+ action_can_vassalize_alert_click:0 "#I Click to Offer Vassalage#!"
+ action_can_vassalize_alert_HELP:0 "\n\n#help Weak [independent|E] Rulers may seek your protection and ask to become your [vassal|E]. Expanding your [realm|E] without going to [war|E] is virtually always beneficial.#!"
