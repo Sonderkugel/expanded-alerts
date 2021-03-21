@@ -347,3 +347,91 @@ action_being_sieged = {
 #		}
 #	}
 #}
+
+action_hook_expiring = {
+	type = alert
+	check_create_action = {
+		every_hooked_character = {
+			limit = {
+				root = {
+					time_to_hook_expiry = {
+						target = prev
+						value < 90
+					}
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_hook_expiring
+				actor = root
+				recipient = this
+			}
+		}
+	}
+
+	effect = {
+		scope:recipient = {
+			open_view_data = {
+				view = character
+			}
+		}
+	}
+}
+
+action_can_demand_payment = {
+	type = alert
+	check_create_action = {
+		every_hooked_character = {
+			limit = {
+				root = {
+					is_character_interaction_potentially_accepted = {
+						recipient = prev
+						interaction = demand_payment_interaction
+					}
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_can_demand_payment
+				actor = root
+				recipient = this
+			}
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = demand_payment_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_can_vassalize = {
+	type = alert
+	check_create_action = {
+		every_neighboring_top_liege_realm_owner = {
+			limit = {
+				root = {
+					is_character_interaction_potentially_accepted = {
+						recipient = prev
+						interaction = offer_vassalization_interaction
+					}
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_can_vassalize
+				actor = root
+				recipient = this
+			}
+		}
+		
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = offer_vassalization_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
