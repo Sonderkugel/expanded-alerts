@@ -5,7 +5,7 @@
  setting_off_being_sieged_alert:0 "#high Off#!"
  setting_off_being_sieged_alert_desc:0 "Alerts will NOT appear when hostile sieges occur."
  
- rule_can_vassalize_alert:0 "#Y Expanded Alerts: #! Being Sieged"
+ rule_can_vassalize_alert:0 "#Y Expanded Alerts: #! Can Vassalize"
  setting_on_can_vassalize_alert:0 "On"
  setting_on_can_vassalize_alert_desc:0 "Alerts will appear when a foreign ruler will accept vassalization."
  setting_off_can_vassalize_alert:0 "#high Off#!"
