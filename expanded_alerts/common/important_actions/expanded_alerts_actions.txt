@@ -348,7 +348,7 @@ action_being_sieged = {
 #	}
 #}
 
-action_hook_expiring = {
+action_hook_expiring_alert = {
 	type = alert
 	check_create_action = {
 		every_hooked_character = {
@@ -362,7 +362,7 @@ action_hook_expiring = {
 				has_game_rule = on_hook_expiring_alert
 			}
 			try_create_important_action = {
-				important_action_type = action_hook_expiring
+				important_action_type = action_hook_expiring_alert
 				actor = root
 				recipient = this
 			}
@@ -408,7 +408,7 @@ action_hook_expiring = {
 	}
 }
 
-action_can_vassalize = {
+action_can_vassalize_alert = {
 	type = alert
 	check_create_action = {
 		every_neighboring_top_liege_realm_owner = {
@@ -422,7 +422,7 @@ action_can_vassalize = {
 				has_game_rule = on_can_vassalize_alert
 			}
 			try_create_important_action = {
-				important_action_type = action_can_vassalize
+				important_action_type = action_can_vassalize_alert
 				actor = root
 				recipient = this
 			}
