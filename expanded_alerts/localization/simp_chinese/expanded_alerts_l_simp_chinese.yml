@@ -20,13 +20,14 @@ l_simp_chinese:
  action_being_sieged_desc:0 "[recipient.GetShortUIName]的[armies|E]正在围攻你的[holdings|E]。\n\n#help 在[battle|E]中击败他们，阻止他们[occupation|E]并降低你的[county_control|E]。#!"
  action_being_sieged_click:0 "#I 点击前往围攻中的军队#!"
  
- action_hook_expiring_alert:0 "Hook expiring soon"
- action_hook_expiring_alert_desc:0 "You should spend the [hook|E] you have on [recipient.GetUIName] soon, or it will expire on [actor.GetHookOn( recipient.Self ).GetExpirationDate.GetString]."
- action_hook_expiring_alert_label:0 "Your [hook|E] on [recipient.GetShortUINameNoTooltip] will soon expire"
- action_hook_expiring_alert_click:0 "#I Click to open Character View#!"
+ #Juijote
+ action_hook_expiring_alert:0 "牵制即将到期"
+ action_hook_expiring_alert_desc:0 "你应尽快在[recipient.GetUIName]身上花掉你的[hook|E]，否则很快会在[actor.GetHookOn( recipient.Self ).GetExpirationDate.GetString]的时候到期。"
+ action_hook_expiring_alert_label:0 "你对于[recipient.GetShortUINameNoTooltip]的[hook|E]即将到期。"
+ action_hook_expiring_alert_click:0 "#I 点击打开角色界面#!"
 
- action_can_vassalize_alert:0 "Neighbor can be Vassalized"
- action_can_vassalize_alert_desc:1 "A neighboring [ruler|E], [recipient.GetUIName], wishes for your protection and would accept [vassalization|E].$action_can_vassalize_HELP$"
- action_can_vassalize_alert_label:0 "You can Vassalize [recipient.GetShortUINameNoTooltip]"
- action_can_vassalize_alert_click:0 "#I Click to Offer Vassalage#!"
- action_can_vassalize_alert_HELP:0 "\n\n#help Weak [independent|E] Rulers may seek your protection and ask to become your [vassal|E]. Expanding your [realm|E] without going to [war|E] is virtually always beneficial.#!"
+ action_can_vassalize_alert:0 "附近外国统治者可以被附庸"
+ action_can_vassalize_alert_desc:1 "邻近的[ruler|E]，[recipient.GetUIName]，希望得到你的保护，会接受[vassalization|E]。$action_can_vassalize_HELP$"
+ action_can_vassalize_alert_label:0 "你可以将[recipient.GetShortUINameNoTooltip]。"
+ action_can_vassalize_alert_click:0 "#I 点击进行附庸#!"
+ action_can_vassalize_alert_HELP:0 "\n\n#help 弱小的[independent|E]统治者可能会寻求你的保护，并要求成为你的[vassal|E]。在不进行[war|E]的情况下扩大你的[realm|E]实际上总是有利的。#!"
