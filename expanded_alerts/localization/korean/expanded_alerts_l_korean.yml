@@ -12,6 +12,13 @@
  action_truce_expiring_desc:0 "[recipient.GetUIName]와의 [truce|E]이 곧 만료됩니다\n\n#help 당신의 [recipient.GetUIName]와의 [truce|E]이 3개월 안에 만료되어, 페널티 없이 [recipient.GetHerHim]에게 [war|E]을 선포할 수 있습니다.#!"
  action_truce_expiring_click:0 "#I [recipient.HerHis]클릭하여 표시하기#!"
  
+ # Localization by 탈모어의 주먹(티에)
+
+ action_truce_expiring_grouped:0 "[truce|E]들이 곧 만료됨"
+ action_truce_expiring_grouped_label:0 "[truce|E]들이 곧 만료됨"
+ action_truce_expiring_grouped_desc:0 "다섯 개 이상의 [truce|E]들이 곧 만료됩니다\n\n#help 다섯 개 이상의 [truce|E]들이 3개월 안에 만료되어, 페널티 없이 다수의 인물에게 [war|E]을 선포할 수 있습니다.#!"
+ action_truce_expiring_grouped_click:0 "#I 클릭하여 외교창을 열기#!"
+ 
  # Localization by 크번빌
  
  action_being_sieged:0 "[siege|E] 당하는 중"
@@ -19,13 +26,15 @@
  action_being_sieged_desc:0 " [recipient.GetShortUIName] 의 [armies|E] 가 [holdings|E] (을)를 공성 중입니다.\n\n#[battle|E] 에서 공성 중인 부대를 격퇴하여 [occupation|E] 을 막고 [county_control|E] 을 지킬 수 있습니다.#!"
  action_being_sieged_click:0 "#I 클릭하여 공성 중인 부대 보기#!"
  
- action_hook_expiring_alert:0 "Hook expiring soon"
- action_hook_expiring_alert_desc:0 "You should spend the [hook|E] you have on [recipient.GetUIName] soon, or it will expire on [actor.GetHookOn( recipient.Self ).GetExpirationDate.GetString]."
- action_hook_expiring_alert_label:0 "Your [hook|E] on [recipient.GetShortUINameNoTooltip] will soon expire"
- action_hook_expiring_alert_click:0 "#I Click to open Character View#!"
+ # Localization by 탈모어의 주먹(티에)
 
- action_can_vassalize_alert:0 "Neighbor can be Vassalized"
- action_can_vassalize_alert_desc:1 "A neighboring [ruler|E], [recipient.GetUIName], wishes for your protection and would accept [vassalization|E].$action_can_vassalize_HELP$"
- action_can_vassalize_alert_label:0 "You can Vassalize [recipient.GetShortUINameNoTooltip]"
- action_can_vassalize_alert_click:0 "#I Click to Offer Vassalage#!"
- action_can_vassalize_alert_HELP:0 "\n\n#help Weak [independent|E] Rulers may seek your protection and ask to become your [vassal|E]. Expanding your [realm|E] without going to [war|E] is virtually always beneficial.#!"
+ action_hook_expiring_alert:0 "구실이 곧 만료됨"
+ action_hook_expiring_alert_desc:0 "당신이 가지고 있는 [recipient.GetUIName]에 대한 [hook|E]을 사용해야 합니다. 그렇지 않으면, [actor.GetHookOn( recipient.Self ).GetExpirationDate.GetString]에 대한 구실이 만료될 것입니다."
+ action_hook_expiring_alert_label:0 "당신이 가진 [recipient.GetShortUINameNoTooltip]에 대한 [hook|E]이 곧 만료됩니다."
+ action_hook_expiring_alert_click:0 "#I 클릭하여 인물창을 열기#!"
+ 
+ action_can_vassalize_alert:0 "이웃을 봉신화 할 수 있음"
+ action_can_vassalize_alert_desc:1 "이웃하는 [ruler|E], [recipient.GetUIName]이 당신의 보호를 희망하고 있으며, [vassalization|E]를 수락할 것입니다.$action_can_vassalize_HELP$"
+ action_can_vassalize_alert_label:0 "[recipient.GetShortUINameNoTooltip]을 봉신화 할 수 있음"
+ action_can_vassalize_alert_click:0 "#I 클릭하여 봉신화 제의하기#!"
+ action_can_vassalize_alert_HELP:0 "\n\n#help 약한 [independent|E] 통치자는 당신의 보호를 희망하고 당신의 [vassal|E]이 되는 것을 요청할 수 있습니다. [war|E] 없이 당신의 [realm|E]을 확장하는 것은 언제나 이익입니다.#!"
