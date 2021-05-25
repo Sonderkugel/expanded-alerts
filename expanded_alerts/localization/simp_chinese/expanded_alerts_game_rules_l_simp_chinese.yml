@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  #Juijote
  rule_being_sieged_alert:0 "#Y 扩展警报: #! 敌军围攻"
  setting_on_being_sieged_alert:0 "启用"
