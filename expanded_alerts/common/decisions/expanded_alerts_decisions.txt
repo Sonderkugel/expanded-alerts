@@ -32,7 +32,7 @@ hide_ea_options_decision = {
     }
 }
 
-#can_assign_guardian
+#can assign guardian
 can_assign_guardian_on_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
     desc = can_assign_guardian_on_option_desc
@@ -42,6 +42,9 @@ can_assign_guardian_on_option = {
 
     is_shown = {
         has_character_flag = flag_ea_options_shown
+        NOT = {
+            has_character_flag = flag_can_assign_guardian_off
+        }
     }
 
     effect = {
@@ -65,5 +68,278 @@ can_assign_guardian_off_option = {
 
     effect = {
         remove_character_flag = flag_can_assign_guardian_off
+    }
+}
+
+#can call ally
+can_call_ally_on_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = can_call_ally_on_option_desc
+    selection_tooltip = can_call_ally_on_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        has_character_flag = flag_ea_options_shown
+        NOT = {
+            has_character_flag = flag_can_call_ally_off
+        }
+    }
+
+    effect = {
+        add_character_flag = flag_can_call_ally_off
+    }
+}
+
+can_call_ally_off_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = can_call_ally_off_option_desc
+    selection_tooltip = can_call_ally_off_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        AND = {
+            has_character_flag = flag_ea_options_shown
+            has_character_flag = flag_can_call_ally_off
+        }
+    }
+
+    effect = {
+        remove_character_flag = flag_can_call_ally_off
+    }
+}
+
+#not enough knights
+not_enough_knights_on_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = not_enough_knights_on_option_desc
+    selection_tooltip = not_enough_knights_on_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        has_character_flag = flag_ea_options_shown
+        NOT = {
+            has_character_flag = flag_not_enough_knights_off
+        }
+    }
+
+    effect = {
+        add_character_flag = flag_not_enough_knights_off
+    }
+}
+
+not_enough_knights_off_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = not_enough_knights_off_option_desc
+    selection_tooltip = not_enough_knights_off_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        AND = {
+            has_character_flag = flag_ea_options_shown
+            has_character_flag = flag_not_enough_knights_off
+        }
+    }
+
+    effect = {
+        remove_character_flag = flag_not_enough_knights_off
+    }
+}
+
+#empty physician position
+empty_physician_position_on_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = empty_physician_position_on_option_desc
+    selection_tooltip = empty_physician_position_on_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        has_character_flag = flag_ea_options_shown
+        NOT = {
+            has_character_flag = flag_empty_physician_position_off
+        }
+    }
+
+    effect = {
+        add_character_flag = flag_empty_physician_position_off
+    }
+}
+
+empty_physician_position_off_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = empty_physician_position_off_option_desc
+    selection_tooltip = empty_physician_position_off_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        AND = {
+            has_character_flag = flag_ea_options_shown
+            has_character_flag = flag_empty_physician_position_off
+        }
+    }
+
+    effect = {
+        remove_character_flag = flag_empty_physician_position_off
+    }
+}
+
+#truce expiring
+truce_expiring_on_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = truce_expiring_on_option_desc
+    selection_tooltip = truce_expiring_on_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        has_character_flag = flag_ea_options_shown
+        NOT = {
+            has_character_flag = flag_truce_expiring_off
+        }
+    }
+
+    effect = {
+        add_character_flag = flag_truce_expiring_off
+    }
+}
+
+truce_expiring_off_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = truce_expiring_off_option_desc
+    selection_tooltip = truce_expiring_off_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        AND = {
+            has_character_flag = flag_ea_options_shown
+            has_character_flag = flag_truce_expiring_off
+        }
+    }
+
+    effect = {
+        remove_character_flag = flag_truce_expiring_off
+    }
+}
+
+#being sieged
+being_sieged_on_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = being_sieged_on_option_desc
+    selection_tooltip = being_sieged_on_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        has_character_flag = flag_ea_options_shown
+        NOT = {
+            has_character_flag = flag_being_sieged_off
+        }
+    }
+
+    effect = {
+        add_character_flag = flag_being_sieged_off
+    }
+}
+
+being_sieged_off_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = being_sieged_off_option_desc
+    selection_tooltip = being_sieged_off_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        AND = {
+            has_character_flag = flag_ea_options_shown
+            has_character_flag = flag_being_sieged_off
+        }
+    }
+
+    effect = {
+        remove_character_flag = flag_being_sieged_off
+    }
+}
+
+#hook expiring
+hook_expiring_on_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = hook_expiring_on_option_desc
+    selection_tooltip = hook_expiring_on_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        has_character_flag = flag_ea_options_shown
+        NOT = {
+            has_character_flag = flag_hook_expiring_off
+        }
+    }
+
+    effect = {
+        add_character_flag = flag_hook_expiring_off
+    }
+}
+
+hook_expiring_off_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = hook_expiring_off_option_desc
+    selection_tooltip = hook_expiring_off_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        AND = {
+            has_character_flag = flag_ea_options_shown
+            has_character_flag = flag_hook_expiring_off
+        }
+    }
+
+    effect = {
+        remove_character_flag = flag_hook_expiring_off
+    }
+}
+
+#can vassalize
+can_vassalize_on_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = can_vassalize_on_option_desc
+    selection_tooltip = can_vassalize_on_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        has_character_flag = flag_ea_options_shown
+        NOT = {
+            has_character_flag = flag_can_vassalize_off
+        }
+    }
+
+    effect = {
+        add_character_flag = flag_can_vassalize_off
+    }
+}
+
+can_vassalize_off_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = can_vassalize_off_option_desc
+    selection_tooltip = can_vassalize_off_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        AND = {
+            has_character_flag = flag_ea_options_shown
+            has_character_flag = flag_can_vassalize_off
+        }
+    }
+
+    effect = {
+        remove_character_flag = flag_can_vassalize_off
     }
 }
