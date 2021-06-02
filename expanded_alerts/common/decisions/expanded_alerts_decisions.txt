@@ -84,6 +84,8 @@ can_assign_guardian_off_option = {
 #can call ally
 can_call_ally_on_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_off_decision_confirm
 
     ai_check_interval = 0
@@ -104,6 +106,8 @@ can_call_ally_on_option = {
 
 can_call_ally_off_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_on_decision_confirm
 
     ai_check_interval = 0
@@ -125,6 +129,8 @@ can_call_ally_off_option = {
 #not enough knights
 not_enough_knights_on_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_off_decision_confirm
 
     ai_check_interval = 0
@@ -145,6 +151,8 @@ not_enough_knights_on_option = {
 
 not_enough_knights_off_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_on_decision_confirm
 
     ai_check_interval = 0
@@ -166,6 +174,8 @@ not_enough_knights_off_option = {
 #empty physician position
 empty_physician_position_on_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_off_decision_confirm
 
     ai_check_interval = 0
@@ -186,6 +196,8 @@ empty_physician_position_on_option = {
 
 empty_physician_position_off_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_on_decision_confirm
 
     ai_check_interval = 0
@@ -207,6 +219,8 @@ empty_physician_position_off_option = {
 #truce expiring
 truce_expiring_on_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_off_decision_confirm
 
     ai_check_interval = 0
@@ -227,6 +241,8 @@ truce_expiring_on_option = {
 
 truce_expiring_off_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_on_decision_confirm
 
     ai_check_interval = 0
@@ -248,6 +264,8 @@ truce_expiring_off_option = {
 #being sieged
 being_sieged_on_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_off_decision_confirm
 
     ai_check_interval = 0
@@ -268,6 +286,8 @@ being_sieged_on_option = {
 
 being_sieged_off_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_on_decision_confirm
 
     ai_check_interval = 0
@@ -289,6 +309,8 @@ being_sieged_off_option = {
 #hook expiring
 hook_expiring_on_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_off_decision_confirm
 
     ai_check_interval = 0
@@ -309,6 +331,8 @@ hook_expiring_on_option = {
 
 hook_expiring_off_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_on_decision_confirm
 
     ai_check_interval = 0
@@ -330,6 +354,8 @@ hook_expiring_off_option = {
 #can vassalize
 can_vassalize_on_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_off_decision_confirm
 
     ai_check_interval = 0
@@ -350,6 +376,8 @@ can_vassalize_on_option = {
 
 can_vassalize_off_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_on_decision_confirm
 
     ai_check_interval = 0
