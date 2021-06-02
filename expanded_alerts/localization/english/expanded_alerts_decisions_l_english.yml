@@ -1,0 +1,18 @@
+﻿l_english:
+ show_ea_options_decision:0 "Show Expanded Alerts Options"
+ show_ea_options_decision_desc:0 "Shows a list of options allowing you to tweak alerts to your preferences."
+ show_ea_options_decision_tooltip:0 "Open options for #Y Expanded Alerts #!"
+ show_ea_options_decision_confirm:0 "Show Options"
+
+ hide_ea_options_decision:0 "Hide Expanded Alerts Options"
+ hide_ea_options_decision_desc:0 "Hides the list of options for alerts currently open."
+ hide_ea_options_decision_tooltip:0 "Close options for #Y Expanded Alerts #!"
+ hide_ea_options_decision_confirm:0 "Hide Options"
+
+ can_assign_guardian_on_option_decision:0 "Can Assign Guardian: #G ON #!"
+ can_assign_guardian_on_option_decision_desc:0 "Alerts will appear when a child requires a guardian"
+ can_assign_guardian_on_option_decision_confirm:0 "Turn off"
+
+ can_assign_guardian_off_option_decision:0 "Can Assign Guardian: #R OFF #!"
+ can_assign_guardian_off_option_decision_desc:0 "Alerts will NOT appear when a child requires a guardian"
+ can_assign_guardian_off_option_decision_confirm:0 "Turn on"
