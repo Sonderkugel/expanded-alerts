@@ -1,5 +1,8 @@
 ﻿show_ea_options_decision = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
+
     ai_check_interval = 0
 
     is_shown = {
@@ -17,6 +20,9 @@
 
 hide_ea_options_decision = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
+
     ai_check_interval = 0
 
     is_shown = {
@@ -33,6 +39,8 @@ hide_ea_options_decision = {
 #can assign guardian
 can_assign_guardian_on_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_off_decision_confirm
 
     ai_check_interval = 0
@@ -53,6 +61,8 @@ can_assign_guardian_on_option = {
 
 can_assign_guardian_off_option = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = no_desc
+    selection_tooltip = no_tooltip
     confirm_text = turn_on_decision_confirm
 
     ai_check_interval = 0

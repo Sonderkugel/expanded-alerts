@@ -1,11 +1,11 @@
 ﻿l_english:
  show_ea_options_decision:0 "Show Expanded Alerts Options"
  show_ea_options_decision_confirm:0 "Show Options"
- show_ea_options_decision.tt "A list of options allowing you to tweak alerts to your preferences will be shown"
+ show_ea_options_decision.tt:0 "A list of options allowing you to tweak alerts to your preferences will be shown"
 
  hide_ea_options_decision:0 "Hide Expanded Alerts Options"
  hide_ea_options_decision_confirm:0 "Hide Options"
- show_ea_options_decision.tt "The currently opened list of options for alerts will be hidden"
+ show_ea_options_decision.tt:0 "The currently opened list of options for alerts will be hidden"
 
  turn_off_decision_confirm:0 "Turn off"
  turn_off_decision_effects.tt:0 "Turning this off will prevent it from appearing as an alert"
@@ -15,3 +15,5 @@
  can_assign_guardian_on_option_decision:0 "Can Assign Guardian: #P ON #!"
  can_assign_guardian_off_option_decision:0 "Can Assign Guardian: #N OFF #!"
 
+ no_desc:0 ""
+ no_tooltip:0 ""
