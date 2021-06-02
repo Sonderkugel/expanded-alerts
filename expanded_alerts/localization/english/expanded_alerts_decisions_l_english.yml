@@ -1,11 +1,11 @@
 ﻿l_english:
  show_ea_options_decision:0 "Show Expanded Alerts Options"
  show_ea_options_decision_confirm:0 "Show Options"
- show_ea_options_decision.tt:0 "Shows a list of options allowing you to tweak alerts to your preferences"
+ show_ea_options_decision.tt:0 "Show options for Expanded Alerts, allowing you to tweak alerts to your preferences"
 
  hide_ea_options_decision:0 "Hide Expanded Alerts Options"
  hide_ea_options_decision_confirm:0 "Hide Options"
- hide_ea_options_decision.tt:0 "Hides the currently opened list of options for alerts"
+ hide_ea_options_decision.tt:0 "Hide options for Expanded Alerts"
 
  turn_off_decision_confirm:0 "Turn off"
  turn_off_decision_effects.tt:0 "Turning this off will prevent it from appearing as an alert"
