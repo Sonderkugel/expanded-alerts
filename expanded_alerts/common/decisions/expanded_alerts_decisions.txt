@@ -1,27 +1,33 @@
-﻿show_EA_options_decision = {
+﻿show_ea_options_decision = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
-    ai_check_frequency = 0
+    desc = show_ea_options_decision_desc
+    selection_tooltip = show_ea_options_decision_tooltip
+
+    ai_check_interval = 0
 
     is_shown = {
         NOT = {
-            has_character_flag = flag_EA_options_shown
+            has_character_flag = flag_ea_options_shown
         }
     }
 
     effect = {
-        add_character_flag = flag_EA_options_shown
+        add_character_flag = flag_ea_options_shown
     }
 }
 
-hide_EA_options_decision = {
+hide_ea_options_decision = {
     picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
-    ai_check_frequency = 0
+    desc = hide_ea_options_decision_desc
+    selection_tooltip = show_ea_options_decision_tooltip
+
+    ai_check_interval = 0
 
     is_shown = {
-        has_character_flag = flag_EA_options_shown
+        has_character_flag = flag_ea_options_shown
     }
 
     effect = {
-        remove_character_flag = flag_EA_options_shown
+        remove_character_flag = flag_ea_options_shown
     }
 }
