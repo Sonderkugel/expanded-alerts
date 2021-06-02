@@ -31,3 +31,39 @@ hide_ea_options_decision = {
         remove_character_flag = flag_ea_options_shown
     }
 }
+
+#can_assign_guardian
+can_assign_guardian_on_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = can_assign_guardian_on_option_desc
+    selection_tooltip = can_assign_guardian_on_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        has_character_flag = flag_ea_options_shown
+    }
+
+    effect = {
+        add_character_flag = flag_can_assign_guardian_off
+    }
+}
+
+can_assign_guardian_off_option = {
+    picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+    desc = can_assign_guardian_off_option_desc
+    selection_tooltip = can_assign_guardian_off_option_tooltip
+
+    ai_check_interval = 0
+
+    is_shown = {
+        AND = {
+            has_character_flag = flag_ea_options_shown
+            has_character_flag = flag_can_assign_guardian_off
+        }
+    }
+
+    effect = {
+        remove_character_flag = flag_can_assign_guardian_off
+    }
+}
