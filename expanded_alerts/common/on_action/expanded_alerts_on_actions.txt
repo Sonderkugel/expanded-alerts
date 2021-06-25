@@ -1,5 +1,11 @@
-﻿quarterly_playable_pulse = {
-	# checks for court physician 4 times per year
+﻿# checks for court physician 4 times per year
+ quarterly_playable_pulse = {
+	on_actions = {
+		court_physician_quarterly_pulse
+	}
+}
+
+court_physician_quarterly_pulse = {
 	effect = {
 		if = {
 			limit = {
