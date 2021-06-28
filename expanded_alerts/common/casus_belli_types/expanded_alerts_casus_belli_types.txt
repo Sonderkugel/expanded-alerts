@@ -171,11 +171,16 @@
 			desc = independence_war_white_peace_desc
 		}
 		desc = independence_war_white_peace_end_desc
-
 	}
 
 	on_white_peace = {
-		scope:attacker = { show_pow_release_message_effect = yes }
+		scope:attacker = { 
+			show_pow_release_message_effect = yes 
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
 		hidden_effect = {
 			scope:attacker = {
 				add_truce_both_ways = {
@@ -217,6 +222,11 @@
 		}
 
 		scope:defender = {
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+
 			add_character_flag = {
 				flag = recent_independence_faction_war
 				years = faction_war_white_peace_cooldown
@@ -244,7 +254,6 @@
 			desc = player_independence_war_defeat_desc #same loc as for player
 		}
 		desc = independence_defeat_end_desc
-
 	}
 
 	on_defeat = {
@@ -257,7 +266,7 @@
 			add_dread = medium_dread_gain
 			# Prestige for Defender
 			add_prestige = medium_prestige_value
-			add_achievement_flag = { FLAG = achievement_know_your_place_flag }
+			add_achievement_flag_effect = { FLAG = achievement_know_your_place_flag }
 		}
 
 		on_lost_faction_revolt_war = yes
@@ -289,7 +298,6 @@
 	max_defender_score_from_battles = 50
 
 	max_ai_diplo_distance_to_title = 500
-	min_ai_score = 100
 }
 
 liberty_faction_war = {
@@ -324,7 +332,6 @@ liberty_faction_war = {
 			desc = liberty_war_victory_desc
 		}
 		desc = liberty_war_victory_end_desc
-
 	}
 
 	on_victory = {
@@ -451,7 +458,13 @@ liberty_faction_war = {
 	}
 
 	on_white_peace = {
-		scope:attacker = { show_pow_release_message_effect = yes }
+		scope:attacker = {
+			show_pow_release_message_effect = yes
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
 		hidden_effect = {
 			scope:attacker = {
 				add_truce_both_ways = {
@@ -488,6 +501,10 @@ liberty_faction_war = {
             }
 		}
 		scope:defender = {
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
 			add_character_flag = {
 				flag = recent_liberty_faction_war
 				years = faction_war_white_peace_cooldown
@@ -513,7 +530,6 @@ liberty_faction_war = {
 			desc = liberty_war_defeat_desc
 		}
 		desc = liberty_war_defeat_end_desc
-
 	}
 
 	on_defeat = {
@@ -524,7 +540,7 @@ liberty_faction_war = {
 				years = faction_war_defeat_cooldown
 			}
 			add_dread = medium_dread_gain
-			add_achievement_flag = { FLAG = achievement_know_your_place_flag }
+			add_achievement_flag_effect = { FLAG = achievement_know_your_place_flag }
 		}
 		on_lost_faction_revolt_war = yes
 	}
@@ -553,7 +569,6 @@ liberty_faction_war = {
 	max_defender_score_from_battles = 50
 
 	max_ai_diplo_distance_to_title = 500
-	min_ai_score = 100
 }
 
 populist_war = {
@@ -600,7 +615,6 @@ populist_war = {
 
 	on_victory_desc = {
 		desc = populist_war_victory_desc
-
 	}
 
 	on_victory = {
@@ -654,11 +668,16 @@ populist_war = {
 
 	on_white_peace_desc = {
 		desc = populist_war_white_peace_desc
-
 	}
 
 	on_white_peace = {
-		scope:attacker = { show_pow_release_message_effect = yes }
+		scope:attacker = {
+			show_pow_release_message_effect = yes
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
 		on_white_peace_faction_revolt_war = yes
 		hidden_effect = {
 			scope:attacker = {
@@ -708,7 +727,6 @@ populist_war = {
 
 	on_defeat_desc = {
 		desc = populist_war_defeat_desc
-
 	}
 
 	on_defeat = {
@@ -739,7 +757,7 @@ populist_war = {
 		}
 		scope:defender = {
 			add_dread = medium_dread_gain
-			add_achievement_flag = { FLAG = achievement_know_your_place_flag }
+			add_achievement_flag_effect = { FLAG = achievement_know_your_place_flag }
 		}
 	}
 
@@ -765,7 +783,6 @@ populist_war = {
 	max_defender_score_from_battles = 50
 
 	max_ai_diplo_distance_to_title = 500
-	min_ai_score = 100
 }
 
 claimant_faction_war = {
@@ -811,7 +828,6 @@ claimant_faction_war = {
 
 	on_victory_desc = {
 		desc = claimant_faction_war_victory_desc
-
 	}
 
 	on_victory = {
@@ -862,11 +878,23 @@ claimant_faction_war = {
 
 	on_white_peace_desc = {
 		desc = claimant_faction_war_white_peace_desc
-
 	}
 
 	on_white_peace = {
-		scope:attacker = { show_pow_release_message_effect = yes }
+		scope:attacker = {
+			show_pow_release_message_effect = yes
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
+
+		scope:defender = {
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
 		on_white_peace_faction_revolt_war = yes
 
 		hidden_effect = {
@@ -911,7 +939,6 @@ claimant_faction_war = {
 
 	on_defeat_desc = {
 		desc = claimant_faction_war_defeat_desc
-
 	}
 
 	on_defeat = {
@@ -920,7 +947,7 @@ claimant_faction_war = {
 
 		scope:defender = {
 			add_dread = medium_dread_gain
-			add_achievement_flag = { FLAG = achievement_know_your_place_flag }
+			add_achievement_flag_effect = { FLAG = achievement_know_your_place_flag }
 		}
 	}
 
@@ -946,7 +973,6 @@ claimant_faction_war = {
 	max_defender_score_from_battles = 100
 
 	max_ai_diplo_distance_to_title = 500
-	min_ai_score = 100
 }
 
 depose_war = {
@@ -977,7 +1003,6 @@ depose_war = {
 			}
 			desc = depose_war_victory_desc
 		}
-
 	}
 
 	on_victory = {
@@ -1038,11 +1063,22 @@ depose_war = {
 			}
 			desc = depose_war_white_peace_desc
 		}
-
 	}
 
 	on_white_peace = {
-		scope:attacker = { show_pow_release_message_effect = yes }
+		scope:attacker = {
+			show_pow_release_message_effect = yes
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
+		scope:defender = {
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
 		on_white_peace_faction_revolt_war = yes
 	}
 
@@ -1054,7 +1090,6 @@ depose_war = {
 			}
 			desc = depose_war_defeat_desc
 		}
-
 	}
 
 	on_defeat = {
@@ -1091,7 +1126,6 @@ depose_war = {
 	max_defender_score_from_battles = 100
 
 	max_ai_diplo_distance_to_title = 500
-	min_ai_score = 100
 }
 
 refused_liege_demand_war = {
@@ -1133,7 +1167,6 @@ refused_liege_demand_war = {
 			}
 			desc = refused_liege_demand_war_victory_desc
 		}
-
 	}
 
 	on_victory = {
@@ -1212,11 +1245,23 @@ refused_liege_demand_war = {
 			}
 			desc = refused_liege_demand_war_white_peace_desc
 		}
-
 	}
 
 	on_white_peace = {
-		scope:attacker = { show_pow_release_message_effect = yes }
+		scope:attacker = {
+			show_pow_release_message_effect = yes
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
+
+		scope:defender = {
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
 		hidden_effect = {
 			scope:attacker = {
 				add_truce_both_ways = {
@@ -1260,7 +1305,6 @@ refused_liege_demand_war = {
 			}
 			desc = refused_liege_demand_war_defeat_desc
 		}
-
 	}
 
 	on_defeat = {
@@ -1299,7 +1343,6 @@ refused_liege_demand_war = {
 	max_defender_score_from_battles = 50
 
 	max_ai_diplo_distance_to_title = 500
-	min_ai_score = 100
 }
 
 independence_war = {
@@ -1517,7 +1560,6 @@ independence_war = {
 			}
 			desc = independence_war_victory_desc_local_player_attacker_alone # Desc for a third party involved
 		}
-
 	}
 
 	on_victory = {
@@ -1591,11 +1633,16 @@ independence_war = {
 			}
 			desc = player_independence_war_white_peace_desc
 		}
-
 	}
 
 	on_white_peace = {
-		scope:attacker = { show_pow_release_message_effect = yes }
+		scope:attacker = {
+			show_pow_release_message_effect = yes
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
+		}
 		hidden_effect = {
 			scope:attacker = {
 				add_truce_both_ways = {
@@ -1631,6 +1678,10 @@ independence_war = {
 
 		scope:defender = {
 			add_prestige = minor_prestige_value
+			stress_impact = {
+ 				ambitious = medium_stress_impact_gain
+ 				arrogant = medium_stress_impact_gain
+ 			}
 		}
 	}
 
@@ -1650,7 +1701,6 @@ independence_war = {
 			}
 			desc = player_independence_war_defeat_desc
 		}
-
 	}
 
 	on_defeat = {
@@ -1669,7 +1719,7 @@ independence_war = {
 			scope:defender = {
 				add_opinion = {
 					target = prev
-					modifier = vassal_lost_or_wp_faction_revolt_war
+					modifier = vassal_lost_faction_revolt_war
 				}
 			}
 		}
@@ -1697,5 +1747,4 @@ independence_war = {
 	max_defender_score_from_battles = 50
 
 	max_ai_diplo_distance_to_title = 500
-	min_ai_score = 100
 }

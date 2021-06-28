@@ -299,14 +299,10 @@ action_being_sieged = {
 	type = alert
 	check_create_action = {
 		every_war_enemy = {
-			save_temporary_scope_as = war_enemy
-			if = {
-				limit = {
-					scope:war_enemy = {
-						any_army = {
-							is_army_in_siege_relevant_for = root
-							is_army_in_combat = no
-						}
+			limit = {
+				any_army = {
+						is_army_in_siege_relevant_for = root
+						is_army_in_combat = no
 					}
 					root = {
 						NOT = {
@@ -314,11 +310,11 @@ action_being_sieged = {
 						}
 					}
 				}
-				try_create_important_action = {
-					important_action_type = action_being_sieged
-					actor = root
-					recipient = scope:war_enemy
-				}
+			}
+			try_create_important_action = {
+				important_action_type = action_being_sieged
+				actor = root
+				recipient = this
 			}
 		}
 	}
