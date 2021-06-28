@@ -1,0 +1,40 @@
+﻿l_english:
+ show_ea_options_decision:0 "Show Expanded Alerts Options"
+ show_ea_options_decision_confirm:0 "Show Options"
+ show_ea_options_decision.tt:0 "Show options for Expanded Alerts, allowing you to tweak alerts to your preferences"
+
+ hide_ea_options_decision:0 "Hide Expanded Alerts Options"
+ hide_ea_options_decision_confirm:0 "Hide Options"
+ hide_ea_options_decision.tt:0 "Hide options for Expanded Alerts"
+
+ turn_off_decision_confirm:0 "Turn off"
+ turn_off_decision_effects.tt:0 "Turning this off will prevent it from appearing as an alert"
+ turn_on_decision_confirm:0 "Turn on"
+ turn_on_decision_effects.tt:0 "Turning this on will cause it to appear as an alert"
+
+ no_desc:0 ""
+ no_tooltip:0 ""
+
+ can_assign_guardian_on_option:0 "Can Assign Guardian: #P ON #!"
+ can_assign_guardian_off_option:0 "Can Assign Guardian: #N OFF #!"
+
+ can_call_ally_on_option:0 "Can Call Ally: #P ON #!"
+ can_call_ally_off_option:0 "Can Call Ally: #N OFF #!"
+
+ not_enough_knights_on_option:0 "Not Enough Knights: #P ON #!"
+ not_enough_knights_off_option:0 "Not Enough Knights: #N OFF #!"
+
+ empty_physician_position_on_option:0 "No Court Physician: #P ON #!"
+ empty_physician_position_off_option:0 "No Court Physician: #N OFF #!"
+
+ truce_expiring_on_option:0 "Truce Expiring: #P ON #!"
+ truce_expiring_off_option:0 "Truce Expiring: #N OFF #!"
+
+ being_sieged_on_option:0 "Being Sieged: #P ON #!"
+ being_sieged_off_option:0 "Being Sieged: #N OFF #!"
+
+ hook_expiring_on_option:0 "Hook Expiring: #P ON #!"
+ hook_expiring_off_option:0 "Hook Expiring: #N OFF #!"
+
+ can_vassalize_on_option:0 "Can Vassalize Neighbor: #P ON #!"
+ can_vassalize_off_option:0 "Can Vassalize Neighbor: #N OFF #!"

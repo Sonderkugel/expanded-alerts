@@ -38,3 +38,20 @@
  action_can_vassalize_alert_label:0 "[recipient.GetShortUINameNoTooltip]을 봉신화 할 수 있음"
  action_can_vassalize_alert_click:0 "#I 클릭하여 봉신화 제의하기#!"
  action_can_vassalize_alert_HELP:0 "\n\n#help 약한 [independent|E] 통치자는 당신의 보호를 희망하고 당신의 [vassal|E]이 되는 것을 요청할 수 있습니다. [war|E] 없이 당신의 [realm|E]을 확장하는 것은 언제나 이익입니다.#!"
+
+ action_can_assign_guardian_alert:0 "Guardian can be assigned"
+ action_can_assign_guardian_alert_desc:2 "You can designate a [guardian|E] for [recipient.GetShortUIName].$action_can_assign_guardian_HELP$"
+ action_can_assign_guardian_alert_label:1 "You can designate a guardian for [recipient.GetShortUINameNoTooltip]"
+ action_can_assign_guardian_alert_click:0 "#I Click to designate a [guardian|E]#!"
+ action_can_assign_guardian_alert_HELP:0 "\n\n#help Your children can be assigned a Guardian, who will transfer their [skills|E] and other knowledge to the child. A Guardian with a good [education_trait|E] will transfer it to the child, while letting a [vassal|E] educate your child will raise their [opinion|E] of you. If you want more control, you can educate the child yourself. #!"
+
+ action_can_call_ally_alert:1 "You can call Ally"
+ action_can_call_ally_alert_desc:2 "You can call your [ally|E] [recipient.GetUIName] to your [wars|E].$CALL_TO_WAR_HELP$"
+ action_can_call_ally_alert_label:2 "You can call on your Ally [recipient.GetShortUINameNoTooltip]"
+ action_can_call_ally_alert_click:0 "#I Click to call Ally#!"
+ CALL_TO_WAR_HELP:1 "\n\n#help Calling other [rulers|E] into your War means it is more likely you win, but be aware that you must spend [prestige|E] for each [ally|E] that joins. Summoning [dynasty|E] Members costs [dynasty_prestige|E], while [house|E] members will join you for free — if they accept your call.#!"
+
+ action_not_enough_knights_alert:1 "Few $knight_culture_player_plural_no_tooltip$"
+ action_not_enough_knights_alert_label:2 "Few $knight_culture_player_plural_no_tooltip$"
+ action_not_enough_knights_alert_desc:3 "You do not have the maximum number of $knight_culture_player_plural$ employed.\n\n#help While it is not necessary to have the maximum amount of $knight_culture_player_plural_no_tooltip$, a $knight_culture_player_no_tooltip$ with high [prowess|E] will make a large difference in [battles|E].\n\nGain more and $knight_culture_player_plural_no_tooltip$ by either recruiting existing [guests|E] at your [court|E], or send out the word that you are looking for $knight_culture_player_plural_no_tooltip$.#!"
+ action_not_enough_knights_alert_click:1 "#I Click to view your Military#!"
