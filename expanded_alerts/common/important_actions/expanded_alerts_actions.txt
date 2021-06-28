@@ -1,4 +1,4 @@
-﻿action_can_assign_guardian = {
+﻿action_can_assign_guardian_alert = {
     type = alert
 
 	check_create_action = {
@@ -20,7 +20,7 @@
 				}
 			}
 			try_create_important_action = {
-				important_action_type = action_can_assign_guardian
+				important_action_type = action_can_assign_guardian_alert
 				actor = root
 				recipient = this
 				secondary_recipient = this
@@ -71,7 +71,7 @@
 #	}
 #}
 
-action_can_call_ally = {
+action_can_call_ally_alert = {
     type = alert
 
 	check_create_action = {
@@ -92,7 +92,7 @@ action_can_call_ally = {
 					}
 				}
 				try_create_important_action = {
-					important_action_type = action_can_call_ally
+					important_action_type = action_can_call_ally_alert
 					actor = root
 					recipient = scope:ally
 				}
@@ -189,7 +189,7 @@ action_can_call_ally = {
 #	}
 #}
 
-action_not_enough_knights = {
+action_not_enough_knights_alert = {
 	type = alert
 
 	check_create_action = {
@@ -203,7 +203,7 @@ action_not_enough_knights = {
 				}
 			}
 			try_create_important_action = {
-				important_action_type = action_not_enough_knights
+				important_action_type = action_not_enough_knights_alert
 				actor = root
 			}
 		}
