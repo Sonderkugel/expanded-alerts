@@ -499,3 +499,113 @@ action_can_vassalize = {
 		}
 	}
 }
+
+# vanilla alerts for when toggled off
+
+action_can_assign_guardian = {
+	priority = 350
+	combine_into_one = yes
+	check_create_action = {
+		every_child = {
+			limit = {
+				is_adult = no
+				num_of_relation_guardian = 0
+				age >= childhood_education_start_age
+				exists = liege
+				liege = root
+				root = {
+					is_character_interaction_valid = {
+						recipient = prev
+						interaction = educate_child_interaction
+					}
+					has_character_flag = flag_can_assign_guardian_off
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_can_assign_guardian
+				actor = root
+				recipient = this
+				secondary_recipient = this
+			}
+		}
+		
+	}
+
+	unimportant = {
+		scope:recipient = {
+			any_sibling = { #Not one of your three first kids
+				is_child_of = root
+				age > scope:recipient.age
+				count >= 3
+			}
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = educate_child_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+			secondary_recipient = scope:secondary_recipient
+		}
+	}
+}
+
+action_can_call_ally = {
+	priority = 1000
+	combine_into_one = yes
+	check_create_action = {
+		every_ally = {
+			save_temporary_scope_as = ally
+			if = {
+				limit = {
+					prev = {
+						is_character_interaction_valid = {
+							recipient = scope:ally
+							interaction = call_ally_interaction
+						}
+					}
+					root = {
+						has_character_flag = flag_can_call_ally_off
+					}
+				}
+				try_create_important_action = {
+					important_action_type = action_can_call_ally
+					actor = root
+					recipient = scope:ally
+				}
+			}
+		}
+	}
+	
+	effect = {
+		open_interaction_window = {
+			interaction = call_ally_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_not_enough_knights = {
+	check_create_action = {
+		if = {
+			limit = {
+				max_number_of_knights > root.number_of_knights
+				root = {
+					has_character_flag = flag_not_enough_knights_off
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_not_enough_knights
+				actor = root
+			}
+		}
+	}
+	effect = {
+		root = {
+			open_view = military
+			open_view = knights
+		}
+	}
+}
