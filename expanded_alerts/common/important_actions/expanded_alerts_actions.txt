@@ -301,13 +301,12 @@ action_being_sieged = {
 		every_war_enemy = {
 			limit = {
 				any_army = {
-						is_army_in_siege_relevant_for = root
-						is_army_in_combat = no
-					}
-					root = {
-						NOT = {
-							has_character_flag = flag_being_sieged_off
-						}
+					is_army_in_siege_relevant_for = root
+					is_army_in_combat = no
+				}
+				root = {
+					NOT = {
+						has_character_flag = flag_being_sieged_off
 					}
 				}
 			}
