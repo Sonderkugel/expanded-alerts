@@ -34,6 +34,7 @@ l_german:
  action_can_assign_guardian_alert_label:1 "You can designate a guardian for [recipient.GetShortUINameNoTooltip]"
  action_can_assign_guardian_alert_click:0 "#I Click to designate a [guardian|E]#!"
  action_can_assign_guardian_alert_HELP:0 "\n\n#help Your children can be assigned a Guardian, who will transfer their [skills|E] and other knowledge to the child. A Guardian with a good [education_trait|E] will transfer it to the child, while letting a [vassal|E] educate your child will raise their [opinion|E] of you. If you want more control, you can educate the child yourself. #!"
+ action_can_assign_guardian_alert_unimportant:1 "@warning_icon!#X You have many older children#!"
 
  action_can_call_ally_alert:1 "You can call Ally"
  action_can_call_ally_alert_desc:2 "You can call your [ally|E] [recipient.GetUIName] to your [wars|E].$CALL_TO_WAR_HELP$"

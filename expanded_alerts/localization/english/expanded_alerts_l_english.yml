@@ -40,6 +40,7 @@
  action_can_call_ally_alert_label:2 "You can call on your Ally [recipient.GetShortUINameNoTooltip]"
  action_can_call_ally_alert_click:0 "#I Click to call Ally#!"
  CALL_TO_WAR_HELP:1 "\n\n#help Calling other [rulers|E] into your War means it is more likely you win, but be aware that you must spend [prestige|E] for each [ally|E] that joins. Summoning [dynasty|E] Members costs [dynasty_prestige|E], while [house|E] members will join you for free — if they accept your call.#!"
+ action_can_assign_guardian_alert_unimportant:1 "@warning_icon!#X You have many older children#!"
 
  action_not_enough_knights_alert:1 "Few $knight_culture_player_plural_no_tooltip$"
  action_not_enough_knights_alert_label:2 "Few $knight_culture_player_plural_no_tooltip$"
