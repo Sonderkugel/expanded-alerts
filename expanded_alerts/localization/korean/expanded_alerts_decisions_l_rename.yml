@@ -1,40 +1,43 @@
-﻿l_english:
- show_ea_options_decision:0 "Show Expanded Alerts Options"
- show_ea_options_decision_confirm:0 "Show Options"
- show_ea_options_decision.tt:0 "Show options for Expanded Alerts, allowing you to tweak alerts to your preferences"
+﻿l_korean:
+ 
+ # Localization by 탈모어의 주먹(티에)
+ 
+ show_ea_options_decision:0 "Expanded Alerts: 설정 보이기"
+ show_ea_options_decision_confirm:0 "설정 보이기"
+ show_ea_options_decision.tt:0 "당신의 선호도에 따라 'Expanded Alerts'의 설정을 조절할 수 있는 결단을 보여줍니다"
 
- hide_ea_options_decision:0 "Hide Expanded Alerts Options"
- hide_ea_options_decision_confirm:0 "Hide Options"
- hide_ea_options_decision.tt:0 "Hide options for Expanded Alerts"
+ hide_ea_options_decision:0 "Expanded Alerts: 설정 숨기기"
+ hide_ea_options_decision_confirm:0 "설정 숨기기"
+ hide_ea_options_decision.tt:0 "'Expanded Alerts'의 설정을 숨깁니다"
 
- turn_off_decision_confirm:0 "Turn off"
- turn_off_decision_effects.tt:0 "Turning this off will prevent it from appearing as an alert"
- turn_on_decision_confirm:0 "Turn on"
- turn_on_decision_effects.tt:0 "Turning this on will cause it to appear as an alert"
-
+ turn_off_decision_confirm:0 "비활성화"
+ turn_off_decision_effects.tt:0 "이것을 비활성화하는 것은 이것으로 인한 경보가 발생하지 않도록 합니다"
+ turn_on_decision_confirm:0 "활성화"
+ turn_on_decision_effects.tt:0 "이것을 활성화하는 것은 이것으로 인한 경보가 발생하도록 합니다"
+ 
  no_desc:0 ""
  no_tooltip:0 ""
-
- can_assign_guardian_on_option:0 "Can Assign Guardian: #P ON #!"
- can_assign_guardian_off_option:0 "Can Assign Guardian: #N OFF #!"
-
- can_call_ally_on_option:0 "Can Call Ally: #P ON #!"
- can_call_ally_off_option:0 "Can Call Ally: #N OFF #!"
-
- not_enough_knights_on_option:0 "Not Enough Knights: #P ON #!"
- not_enough_knights_off_option:0 "Not Enough Knights: #N OFF #!"
-
- empty_physician_position_on_option:0 "No Court Physician: #P ON #!"
- empty_physician_position_off_option:0 "No Court Physician: #N OFF #!"
-
- truce_expiring_on_option:0 "Truce Expiring: #P ON #!"
- truce_expiring_off_option:0 "Truce Expiring: #N OFF #!"
-
- being_sieged_on_option:0 "Being Sieged: #P ON #!"
- being_sieged_off_option:0 "Being Sieged: #N OFF #!"
-
- hook_expiring_on_option:0 "Hook Expiring: #P ON #!"
- hook_expiring_off_option:0 "Hook Expiring: #N OFF #!"
-
- can_vassalize_on_option:0 "Can Vassalize Neighbor: #P ON #!"
- can_vassalize_off_option:0 "Can Vassalize Neighbor: #N OFF #!"
+ 
+ can_assign_guardian_on_option:0 "후견인 임명 가능: #P 켜기 #!"
+ can_assign_guardian_off_option:0 "후견인 임명 가능: #N 끄기 #!"
+ 
+ can_call_ally_on_option:0 "동맹 소집 가능: #P 켜기 #!"
+ can_call_ally_off_option:0 "동맹 소집 가능: #N 끄기 #!"
+ 
+ not_enough_knights_on_option:0 "충분하지 않은 기사: #P 켜기 #!"
+ not_enough_knights_off_option:0 "충분하지 않은 기사: #N 끄기 #!"
+ 
+ empty_physician_position_on_option:0 "궁정의사 없음: #P 켜기 #!"
+ empty_physician_position_off_option:0 "궁정의사 없음: #N 끄기 #!"
+ 
+ truce_expiring_on_option:0 "평화조약 만료: #P 켜기 #!"
+ truce_expiring_off_option:0 "평화조약 만료: #N 끄기 #!"
+ 
+ being_sieged_on_option:0 "공성 진행중: #P 켜기 #!"
+ being_sieged_off_option:0 "공성 진행중: #N 끄기 #!"
+ 
+ hook_expiring_on_option:0 "구실 만료: #P 켜기 #!"
+ hook_expiring_off_option:0 "구실 만료: #N 끄기 #!"
+ 
+ can_vassalize_on_option:0 "이웃 봉신화 가능: #P 켜기 #!"
+ can_vassalize_off_option:0 "이웃 봉신화 가능: #N 끄기 #!"
