@@ -1,40 +1,40 @@
-﻿l_russian:
- show_ea_options_decision:0 "Show Expanded Alerts Options"
- show_ea_options_decision_confirm:0 "Show Options"
- show_ea_options_decision.tt:0 "Show options for Expanded Alerts, allowing you to tweak alerts to your preferences"
+l_russian:
+ show_ea_options_decision:0 "Показать настройки Расширенных Оповещений"
+ show_ea_options_decision_confirm:0 "Показать настройки"
+ show_ea_options_decision.tt:0 "Показать настройки Расширенных Оповещений"
 
- hide_ea_options_decision:0 "Hide Expanded Alerts Options"
- hide_ea_options_decision_confirm:0 "Hide Options"
- hide_ea_options_decision.tt:0 "Hide options for Expanded Alerts"
+ hide_ea_options_decision:0 "Скрыть настройки Расширенных Оповещений"
+ hide_ea_options_decision_confirm:0 "Скрыть настройки"
+ hide_ea_options_decision.tt:0 "Скрыть настройки Расширенных Оповещений"
 
- turn_off_decision_confirm:0 "Turn off"
- turn_off_decision_effects.tt:0 "Turning this off will prevent it from appearing as an alert"
- turn_on_decision_confirm:0 "Turn on"
- turn_on_decision_effects.tt:0 "Turning this on will cause it to appear as an alert"
+ turn_off_decision_confirm:0 "Отключить"
+ turn_off_decision_effects.tt:0 "Отключить Оповещение"
+ turn_on_decision_confirm:0 "Включить"
+ turn_on_decision_effects.tt:0 "Включить Оповещение"
 
  no_desc:0 ""
  no_tooltip:0 ""
 
- can_assign_guardian_on_option:0 "Can Assign Guardian: #P ON #!"
- can_assign_guardian_off_option:0 "Can Assign Guardian: #N OFF #!"
+ can_assign_guardian_on_option:0 "Можно назначить Опекуна: #P ON #!"
+ can_assign_guardian_off_option:0 "Можно назначить Опекуна: #N OFF #!"
 
- can_call_ally_on_option:0 "Can Call Ally: #P ON #!"
- can_call_ally_off_option:0 "Can Call Ally: #N OFF #!"
+ can_call_ally_on_option:0 "Можно призвать Союзника к войне: #P ON #!"
+ can_call_ally_off_option:0 "Можно призвать Союзника к войне: #N OFF #!"
 
- not_enough_knights_on_option:0 "Not Enough Knights: #P ON #!"
- not_enough_knights_off_option:0 "Not Enough Knights: #N OFF #!"
+ not_enough_knights_on_option:0 "Недостаточно Воителей: #P ON #!"
+ not_enough_knights_off_option:0 "Недостаточно Воителей: #N OFF #!"
 
- empty_physician_position_on_option:0 "No Court Physician: #P ON #!"
- empty_physician_position_off_option:0 "No Court Physician: #N OFF #!"
+ empty_physician_position_on_option:0 "Нет Придворного Врача: #P ON #!"
+ empty_physician_position_off_option:0 "Нет Придворного Врача: #N OFF #!"
 
- truce_expiring_on_option:0 "Truce Expiring: #P ON #!"
- truce_expiring_off_option:0 "Truce Expiring: #N OFF #!"
+ truce_expiring_on_option:0 "Перемирие заканчивается: #P ON #!"
+ truce_expiring_off_option:0 "Перемирие заканчивается: #N OFF #!"
 
- being_sieged_on_option:0 "Being Sieged: #P ON #!"
- being_sieged_off_option:0 "Being Sieged: #N OFF #!"
+ being_sieged_on_option:0 "Владение под Осадой: #P ON #!"
+ being_sieged_off_option:0 "Владение под Осадой: #N OFF #!"
 
- hook_expiring_on_option:0 "Hook Expiring: #P ON #!"
- hook_expiring_off_option:0 "Hook Expiring: #N OFF #!"
+ hook_expiring_on_option:0 "Действие Влияния истекает: #P ON #!"
+ hook_expiring_off_option:0 "Действие Влияния истекает: #N OFF #!"
 
- can_vassalize_on_option:0 "Can Vassalize Neighbor: #P ON #!"
- can_vassalize_off_option:0 "Can Vassalize Neighbor: #N OFF #!"
+ can_vassalize_on_option:0 "Можно Вассализировать соседа: #P ON #!"
+ can_vassalize_off_option:0 "Можно Вассализировать соседа: #N OFF #!"
