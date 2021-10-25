@@ -1,40 +1,42 @@
 ﻿l_simp_chinese:
- show_ea_options_decision:0 "Show Expanded Alerts Options"
- show_ea_options_decision_confirm:0 "Show Options"
- show_ea_options_decision.tt:0 "Show options for Expanded Alerts, allowing you to tweak alerts to your preferences"
-
- hide_ea_options_decision:0 "Hide Expanded Alerts Options"
- hide_ea_options_decision_confirm:0 "Hide Options"
- hide_ea_options_decision.tt:0 "Hide options for Expanded Alerts"
-
- turn_off_decision_confirm:0 "Turn off"
- turn_off_decision_effects.tt:0 "Turning this off will prevent it from appearing as an alert"
- turn_on_decision_confirm:0 "Turn on"
- turn_on_decision_effects.tt:0 "Turning this on will cause it to appear as an alert"
-
+ #Juijote
+ 
+ show_ea_options_decision:0 "显示拓展警报选项"
+ show_ea_options_decision_confirm:0 "显示选项"
+ show_ea_options_decision.tt:0 "显示拓展警报选项，允许你根据自己的喜好调整警报的具体内容"
+ 
+ hide_ea_options_decision:0 "隐藏扩展警报选项"
+ hide_ea_options_decision_confirm:0 "隐藏选项"
+ hide_ea_options_decision.tt:0 "隐藏扩展警报的选项"
+ 
+ turn_off_decision_confirm:0 "关闭"
+ turn_off_decision_effects.tt:0 "关闭此选项将防止其显示为警报"
+ turn_on_decision_confirm:0 "开启"
+ turn_on_decision_effects.tt:0 "启用此选项将使其显示为警报"
+ 
  no_desc:0 ""
  no_tooltip:0 ""
-
- can_assign_guardian_on_option:0 "Can Assign Guardian: #P ON #!"
- can_assign_guardian_off_option:0 "Can Assign Guardian: #N OFF #!"
-
- can_call_ally_on_option:0 "Can Call Ally: #P ON #!"
- can_call_ally_off_option:0 "Can Call Ally: #N OFF #!"
-
- not_enough_knights_on_option:0 "Not Enough Knights: #P ON #!"
- not_enough_knights_off_option:0 "Not Enough Knights: #N OFF #!"
-
- empty_physician_position_on_option:0 "No Court Physician: #P ON #!"
- empty_physician_position_off_option:0 "No Court Physician: #N OFF #!"
-
- truce_expiring_on_option:0 "Truce Expiring: #P ON #!"
- truce_expiring_off_option:0 "Truce Expiring: #N OFF #!"
-
- being_sieged_on_option:0 "Being Sieged: #P ON #!"
- being_sieged_off_option:0 "Being Sieged: #N OFF #!"
-
- hook_expiring_on_option:0 "Hook Expiring: #P ON #!"
- hook_expiring_off_option:0 "Hook Expiring: #N OFF #!"
-
- can_vassalize_on_option:0 "Can Vassalize Neighbor: #P ON #!"
- can_vassalize_off_option:0 "Can Vassalize Neighbor: #N OFF #!"
+ 
+ can_assign_guardian_on_option:0 "指派监护人： #P 启用 #!"
+ can_assign_guardian_off_option:0 "指派监护人： #N 关闭 #!"
+ 
+ can_call_ally_on_option:0 "召集盟友： #P 启用 #!"
+ can_call_ally_off_option:0 "召集盟友： #N 关闭 #!"
+ 
+ not_enough_knights_on_option:0 "骑士缺员： #P 启用 #!"
+ not_enough_knights_off_option:0 "骑士缺员： #N 关闭 #!"
+ 
+ empty_physician_position_on_option:0 "缺少宫廷医师： #P 启用 #!"
+ empty_physician_position_off_option:0 "缺少宫廷医师： #N 关闭 #!"
+ 
+ truce_expiring_on_option:0 "停战期满： #P 启用 #!"
+ truce_expiring_off_option:0 "停战期满： #N 关闭 #!"
+ 
+ being_sieged_on_option:0 "敌军围攻： #P 启用 #!"
+ being_sieged_off_option:0 "敌军围攻： #N 关闭 #!"
+ 
+ hook_expiring_on_option:0 "牵制期限： #P 启用 #!"
+ hook_expiring_off_option:0 "牵制期限： #N 关闭 #!"
+ 
+ can_vassalize_on_option:0 "接受附庸： #P 启用 #!"
+ can_vassalize_off_option:0 "接受附庸： #N 关闭 #!"
